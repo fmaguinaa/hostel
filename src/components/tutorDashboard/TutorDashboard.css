@@ -1,0 +1,19 @@
+.dashboard__tutor {
+    background-image: url("../../assets/images/abstract-white.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: -webkit-fill-available;
+}
+
+.cards__container {
+    width: fill-available;
+    padding: 1rem;
+    background: lightgrey;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.dashboard__tutor section {
+    padding: 1rem;
+}

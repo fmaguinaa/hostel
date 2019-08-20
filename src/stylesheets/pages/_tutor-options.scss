@@ -1,0 +1,33 @@
+.tutor-options{
+  height: 100vh;
+  width: 100%;
+  background: var(--color-white) no-repeat center fixed;
+  background-size: cover;
+  vertical-align: middle;
+  display:flex;
+  flex-flow: column nowrap;
+}
+  
+.tutor-options-container{
+  margin: auto 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  //align-items: flexleft//center;
+  //text-align: center;
+  &--1{
+    flex-flow: column nowrap;
+    justify-content: initial;
+  }
+
+  & > *{
+    //width: 50%;
+    &:not(:last-child){
+      //padding-right: 4rem;
+    }
+  }
+
+  &__item{
+    width: 50%;
+  }
+}

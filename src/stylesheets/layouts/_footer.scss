@@ -1,0 +1,22 @@
+footer{
+    // height: 30vh;
+    width: 100%;
+    padding: 2rem 8rem;
+    background-color: var(--color-primary-dark);
+    text-align: center;
+}
+
+.footer-primary{
+    &--title{
+        font-size: 7rem;
+        margin: auto 0;
+        font-weight: 700;
+        color: var(--color-white);
+    }
+    &--copyright{
+        font-size: 3rem;
+        margin: auto 0;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+}

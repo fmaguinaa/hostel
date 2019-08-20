@@ -1,0 +1,169 @@
+.student{
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/images/background/student-landing-background.png');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  display:flex;
+  flex-flow: column nowrap;
+}
+
+.student-container{
+  //height: calc( 100vh - 8rem );
+  margin: auto 8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  
+  //align-items: center;
+  //text-align: center;
+  /*& > *{
+    width: 50%;
+    &:not(:last-child){
+      padding-right: 4rem;
+    }
+  }*/
+  &__phrases{
+    //width: 50%;
+    font-size: 6rem;
+    text-align: left;
+    margin: auto 0;
+    .heading-secondary{
+      color: var(--color-white);
+      font-weight: 900;
+    }
+
+    //height: 100%;
+    //flex-grow: 1;
+  }
+}
+
+.student-options{
+  height: 100vh;
+  width: 100%;
+  background: var(--color-white) no-repeat center fixed;
+  background-size: cover;
+  vertical-align: middle;
+  display: flex;
+  flex-flow: column nowrap;
+  &-container{
+    height: 100vh;
+    margin: auto 8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    //align-items: flexleft//center;
+    //text-align: center;
+    &--1{
+      flex-flow: column nowrap;
+      justify-content: initial;
+    }
+
+    & > *{
+      //width: 50%;
+      &:not(:last-child){
+        //padding-right: 4rem;
+      }
+    }
+
+    &__item{
+      width: 50%;
+      margin: auto 4rem;
+      .heading-tertiary{
+        color: var(--color-secondary);
+      }
+    }
+    .vertical-center{
+      margin: auto 8rem;
+      .center{
+        text-align: center;
+        .heading-tertiary{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+.student-signup-container{
+  padding: 8rem 8rem 0;
+  padding-bottom: 0;
+  //margin-top: 7rem;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background: url('../assets/images/background/landing-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &-basic{
+    &-header{
+      .heading-ternary{
+        &--center{
+          margin: 0 10rem;
+          padding: 6rem 0;
+        }
+        &--sub{
+          font-size: 6rem;
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+  &-billing{
+    .heading-secondary--sub{
+      font-size: 4rem;
+      padding-top: 2rem;
+    }
+  }
+  &-form{
+    //margin-bottom: 2rem;
+    //padding-left: 30rem;
+    .heading-secondary{
+      font-size: 4rem;
+    }
+    .form{
+      padding: 4rem 0;
+      .push-right{
+        margin-left: auto;
+        .btn{
+          padding-left: 4rem;
+          padding-right: 4rem;
+        }
+        // text-align: right;
+      }
+    }
+  }
+  &-footer{
+    display: flex;
+    padding: 2rem 0;
+    svg{
+      font-size: 6rem;
+      display: inline;
+      color: var(--color-primary);
+    }
+    .text-description{
+      flex-flow: column nowrap;
+    }
+  }
+}
+
+.student-signup-grid{
+  // height: 100vh;
+  //margin: auto 8rem;
+  //display: flex;
+  
+  display: grid;
+  //grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: minmax(30rem, 1fr) 3fr;//repeat(auto-fit,minmax(10rem, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  @include respond (phone-large) {
+    flex-flow: wrap;
+    display: block;
+  }
+}
