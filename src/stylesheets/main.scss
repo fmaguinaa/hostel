@@ -25,13 +25,8 @@
 
 @import
 "layouts/footer",
-"layouts/landing-nav",
-"layouts/signup-nav",
-"layouts/student-nav",
-"layouts/tutor-nav";
+"layouts/header",
+"layouts/layout";
 
 @import
-"pages/landing",
-"pages/login",
-"pages/student",
-"pages/tutor"
+"pages/landing"

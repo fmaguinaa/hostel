@@ -5,7 +5,7 @@ export default function Footer() {
     <Fragment>
       <footer>
         <div className="footer-primary--copyright">
-          Papaya © 2019
+          Hostal © 2019
         </div>
       </footer>
     </Fragment>

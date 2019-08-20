@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import * as paths from './paths'
 import { Route, Switch } from 'react-router-dom'
-//import Dashboard from '../components/Dashboard/index'
-//import { Account } from '../components/Account/Account'
 // import { Redirect } from 'react-router'
 //import { ApolloConsumer } from 'react-apollo'
 //import { AuthUserContext } from '../components/Session'
 //import { hasUserPermissions } from '../utils/utils'
-import Authorization from '../components/authorization/index'
+// import Authorization from '../components/authorization/index'
 import {
   Landing
 } from './loader'
@@ -36,11 +34,11 @@ export default class Routes extends Component {
                   path={paths.landing}
                   render={() => <Landing />}
                 />
-                <Route
+                {/* <Route
                   exact
                   path={paths.login}
                   render={() => <Authorization />}
-                />
+                /> */}
                 {/* <Route
                   exact
                   path={paths.encomiendas}
