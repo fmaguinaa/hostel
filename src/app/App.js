@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
-//import {createHistory} from 'history/createBrowserHistory'
-//import { browserHistory } from 'react-router';
+import { createHistory } from 'history/createBrowserHistory'
 import Root from '../components/root/Root'
 
-//export const history = createHistory()
+export const history = createHistory()
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <Root
-        //history={browserHistory}
+          history={history}
         />
       </BrowserRouter>
     );
   }
 }
-
-export default App;
