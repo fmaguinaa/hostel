@@ -11,8 +11,8 @@ header {
     // align-items: center;
     //  /* alineacion horizontal */
     // justify-content: center;
-    left: 0; /* Posicionamos la cabecera al lado izquierdo */
-      top: 0; /* Posicionamos la cabecera pegada arriba */
+    left: 0;
+    top: 0;
     position: fixed;
     z-index: 2;
   
@@ -52,23 +52,46 @@ header {
 
 .main__header{
   display: inline-flex;
-  background: black;
+  background: var(--color-primary);
+  padding-left: 10rem;
   width: 100%;
+  @include respond(phone) {
+  padding-left: 0;
+  }
   &__brand{
     img{
       height: 10rem;
       width: auto;
     }
+    @include respond(phone) {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   &__links{
+    display: block;
+
     right: 0;
     margin: auto 0;
     text-align: right;
     align-items: right;
     align-content: right;
     a{
-    color: white;
+    color: var(--color-white);
       margin: auto 2rem;
     }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}
+
+.navbar-mobile{
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  @include respond(phone) {
+    display: block;
   }
 }

@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import headImage from '../../layout/images/logo.jpg'
 
-import { Button, Drawer } from 'antd'
+import { Button, Drawer, Icon } from 'antd'
+
+import * as paths from '../../routes/paths'
 
 export default class NavBar extends Component {
     state = {
@@ -19,22 +23,38 @@ export default class NavBar extends Component {
         });
     };
 
+    Item = (path, content) => (
+        <li>
+            <Link to={path} onClick={this.onClose}>
+                {content}
+            </Link>
+        </li>
+    )
+
     render() {
         return (
-            <div>
-                <Button type="primary" onClick={this.showDrawer}>
-                    Open
-                </Button>
+            <div className='navbar-mobile'>
+                <Button type="primary" onClick={this.showDrawer} icon='menu' />
                 <Drawer
-                    title="Basic Drawer"
                     placement="right"
                     closable={false}
                     onClose={this.onClose}
                     visible={this.state.visible}
                 >
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
-                    <p>Some contents...</p>
+                    <div className='drawer__head'>
+                        <Link to={paths.landing} onClick={this.onClose}>
+                            <img src={headImage} />
+                        </Link>
+                    </div>
+                    <div className='drawer__content'>
+                        <ul>
+                            {this.Item(paths.landing, 'Inicio')}
+                            {this.Item(paths.nosotros, 'Nosotros')}
+                            {this.Item(paths.galeria, 'Galeria y Referencias')}
+                            {this.Item(paths.contactenos, 'Contactenos')}
+                            {this.Item(paths.reservas, 'Reservas')}
+                        </ul>
+                    </div>
                 </Drawer>
             </div>
         )

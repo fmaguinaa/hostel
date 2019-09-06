@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 export default class Contactenos extends Component {
   render() {
     return (
-      <div>
-        <h3>
-          Contactenos
-        </h3>
-      </div>
+      <Fragment>
+        <div>
+          Como llegar?
+        </div>
+      </Fragment>
     )
   }
 }

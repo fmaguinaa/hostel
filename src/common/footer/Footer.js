@@ -4,8 +4,11 @@ export default function Footer() {
   return (
     <Fragment>
       <footer>
+        <div>
+          <a href='https://goo.gl/maps/mxM7JLUarxYFnwCB9' target='_blank'>Jr. Enrique Palacios 312, Huaraz</a>
+        </div>
         <div className="footer-primary--copyright">
-          Hostal © 2019
+          Hostel Traveller's Palace © 2019
         </div>
       </footer>
     </Fragment>

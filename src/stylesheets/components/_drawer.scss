@@ -1,0 +1,23 @@
+.ant-drawer-content{
+    background-color: whitesmoke;
+}
+.ant-drawer-body{
+    padding: 0;
+    .drawer{
+        &__head{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__content{
+            padding: 2rem;
+            ul{
+                list-style-type: none;
+            }
+            a{
+                color: black;
+            }
+        }
+    }
+}

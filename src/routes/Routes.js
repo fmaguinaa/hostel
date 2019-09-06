@@ -7,7 +7,11 @@ import { Route, Switch } from 'react-router-dom'
 //import { hasUserPermissions } from '../utils/utils'
 // import Authorization from '../components/authorization/index'
 import {
-  Landing
+  Contactenos,
+  Galeria,
+  Landing,
+  Nosotros,
+  Reservas
 } from './loader'
 import { NotFound404 } from '../components/utils'
 
@@ -31,8 +35,28 @@ export default class Routes extends Component {
                 /> */}
                 <Route
                   exact
+                  path={paths.contactenos}
+                  render={() => <Contactenos />}
+                />
+                <Route
+                  exact
+                  path={paths.galeria}
+                  render={() => <Galeria />}
+                />
+                <Route
+                  exact
                   path={paths.landing}
                   render={() => <Landing />}
+                />
+                <Route
+                  exact
+                  path={paths.nosotros}
+                  render={() => <Nosotros />}
+                />
+                <Route
+                  exact
+                  path={paths.reservas}
+                  render={() => <Reservas />}
                 />
                 {/* <Route
                   exact

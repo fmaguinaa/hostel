@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import { Row } from 'antd'
+
 import headImage from '../../layout/images/logo.jpg'
 
 import NavBar from './NavBar'
@@ -30,8 +30,11 @@ export default function Header() {
               <Link to={paths.contactenos}>
                 Contactenos
               </Link>
+              <Link to={paths.reservas}>
+                Reservas
+              </Link>
             </div>
-            {/* <NavBar /> */}
+            <NavBar />
         </div>
       </header>
     </Fragment>
