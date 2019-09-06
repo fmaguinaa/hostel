@@ -23,7 +23,7 @@ const LoadingPage = () => (
 const NotFound404 = () => (
   <div style={{
     background: '#FFF',
-    height: 'calc(100vh - 64px)',
+    height: 'calc(100vh - 10rem)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
