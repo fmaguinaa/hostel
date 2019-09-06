@@ -11,15 +11,20 @@ export default class Landing extends Component {
 
       <div className='landing'>
 
-        <Carousel autoplay>
-          <div className='landing__wallpaper' style={{ backgroundImage: image }}>
+        <Carousel>
+          <div className='landing__wallpaper' >
+            <div className='landing__image'  style={{ backgroundImage: image }}>
             asdasd
+
+            </div>
           </div>
           <div className='landing__wallpaper'>
-            <img src={image} />
+            {/* <img src={image} /> */}
+            <div className='landing__image' style={{backgroundColor: 'blue'}}/>
           </div>
           <div className='landing__wallpaper'>
-            <img src={image} />
+            <div className='landing__image'  style={{backgroundColor: 'yellow'}}/>
+            {/* <img src={image} /> */}
           </div>
         </Carousel>
 

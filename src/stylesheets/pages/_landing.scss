@@ -60,13 +60,28 @@
 // // }
 
 .landing{
+    height: 100%;
+    width: 100%;
+    background: red;
     &__wallpaper{
+        // height: 100%;
+        // width: 100%;
+        height: 60vh;
+        width: 100%;
+        // background-image: url('https://www.ytuqueplanes.com/fotos/destinos/La-ciudad-de-Huaraz-Ancash-3.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
+        background-size: cover;
         img{
             width: auto;
             height: 100%;
         }
+    }
+    &__image{
+        height: 60vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
