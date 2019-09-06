@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Contactenos extends Component {
+export default class Landing extends Component {
   render() {
     return (
       <div>
         <h3>
-          Contactenos
+          content
         </h3>
       </div>
     )

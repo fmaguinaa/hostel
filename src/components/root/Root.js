@@ -7,16 +7,16 @@ import Routes from '../../routes/Routes'
 // import * as paths from '../../routes/paths'
 
 // import Landing from '../landing/Landing'
-import Footer from '../../common/footer/Footer'
-import Header from '../../common/header/Header'
+
+import LandingLayout from '../../layout/LayoutWrapper'
 
 
 export default class Root extends Component {
   render() {
+    const {history} = this.props
     return (
       <Fragment>
-        <div className='layout'>
-        <Header />
+        {/* <Header /> */}
 
         {/* <Switch> */}
         {/* <LandingLayout history={this.props.history}>
@@ -42,13 +42,12 @@ export default class Root extends Component {
         {/* <Route exact path={paths.login} component={Login}/>
           <Route exact path={paths.recuperar} component={ForgotPassword}/>
           <Route exact path={paths.recuperacion} component={ChangePassword}/> */}
-        {/* <LandingLayout history={this.props.history}>
+        <LandingLayout history={history}>
             <Routes/>
-          </LandingLayout> */}
-        <Routes />
+          </LandingLayout>
+        {/* <Routes /> */}
         {/* </Switch> */}
-        <Footer />
-        </div>
+        {/* <Footer /> */}
       </Fragment>
     )
   }
