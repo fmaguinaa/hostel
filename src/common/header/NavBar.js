@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import headImage from '../../layout/images/logo.jpg'
 
-import { Button, Drawer, Icon } from 'antd'
+import { Button, Drawer } from 'antd'
 
 import * as paths from '../../routes/paths'
 
@@ -43,16 +43,16 @@ export default class NavBar extends Component {
                 >
                     <div className='drawer__head'>
                         <Link to={paths.landing} onClick={this.onClose}>
-                            <img src={headImage} />
+                            <img src={headImage} alt='logo-head' />
                         </Link>
                     </div>
                     <div className='drawer__content'>
                         <ul>
                             {this.Item(paths.landing, 'Inicio')}
                             {this.Item(paths.nosotros, 'Nosotros')}
-                            {this.Item(paths.galeria, 'Galeria y Referencias')}
-                            {this.Item(paths.contactenos, 'Contactenos')}
+                            {this.Item(paths.galeria, 'Galería')}
                             {this.Item(paths.reservas, 'Reservas')}
+                            {this.Item(paths.contactenos, 'Contáctenos')}
                         </ul>
                     </div>
                 </Drawer>

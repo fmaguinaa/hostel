@@ -95,3 +95,19 @@ header {
     display: block;
   }
 }
+
+.brand{
+  &__desktop{
+    display: block;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__mobile{
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+}
