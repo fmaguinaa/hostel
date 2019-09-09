@@ -12,9 +12,9 @@ const { Content } = Layout
 export default class LayoutBase extends Component {
     render() {
         return (
-            <Layout>
+            <Layout className='layout'>
                 <Header/>
-                <Content className='layout'>
+                <Content>
                     {this.props.children}
                 </Content>
                 <Footer />
