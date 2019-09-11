@@ -64,6 +64,7 @@
     // width: 100%;
     // background: red;
     height: auto;
+    padding-bottom: 19.5rem;
     &__wallpaper{
         // height: 100%;
         // width: 100%;
@@ -83,7 +84,9 @@
             margin: auto;
             font-weight: 900;
             font-size: 6rem;
+            text-transform: uppercase;
             color: var(--color-white);
+            letter-spacing: .2em;
         }
     }
 }

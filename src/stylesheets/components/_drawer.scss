@@ -4,6 +4,7 @@
 .ant-drawer-body{
     padding: 0;
     .drawer{
+        margin-bottom: 5rem;
         &__head{
             img{
                 width: 100%;
@@ -18,6 +19,11 @@
             a{
                 color: black;
             }
+        }
+        &__footer{
+            text-align: center;
+            align-items: center;
+            margin: 0 auto;
         }
     }
 }

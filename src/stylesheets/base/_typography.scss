@@ -156,6 +156,9 @@ code {
   &:not(:last-child){
     margin-bottom: 3rem;
   }
+  @include respond(phone-large){
+    font-size: 1.1em;
+  }
 }
 
 .footer-text{

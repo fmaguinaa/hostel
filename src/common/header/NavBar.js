@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import headImage from '../../layout/images/logo.jpg'
 
+import Social from '../social/Social'
+
 import { Button, Drawer } from 'antd'
 
 import * as paths from '../../routes/paths'
@@ -54,6 +56,9 @@ export default class NavBar extends Component {
                             {this.Item(paths.reservas, 'Reservas')}
                             {this.Item(paths.contactenos, 'Contáctenos')}
                         </ul>
+                    </div>
+                    <div className='drawer__footer'>
+                        <Social />
                     </div>
                 </Drawer>
             </div>
