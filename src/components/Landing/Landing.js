@@ -35,8 +35,8 @@ export default class Landing extends Component {
           </div>
         </Carousel>
         <h1 className='heading-tertiary heading-tertiary--1 heading-tertiary--center u-margin-bottom-small '>
-              Un poco sobre nosotros
-            </h1>
+          Un poco sobre nosotros
+        </h1>
         <div className='services'>
           <div className='service'>
             <div className='content'>

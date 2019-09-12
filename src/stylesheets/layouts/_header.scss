@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom:  var(--line);
+    // border-bottom:  var(--line);
     padding: 3rem 0;
     background: transparent;
     
@@ -70,15 +70,22 @@ header {
   }
   &__links{
     display: block;
-
+    text-transform: uppercase;
     right: 0;
     margin: auto 0;
     text-align: right;
     align-items: right;
     align-content: right;
     a{
-    color: var(--color-white);
+      color: var(--color-white);
       margin: auto 2rem;
+      font-size: 2rem;
+      font-weight: 400;
+      padding-bottom: 0.5em;
+      &:hover, &:visited, &:active{
+        color: var(--color-secondary);
+        border-bottom: var(--line-3);
+      }
     }
     @include respond(phone) {
       display: none;

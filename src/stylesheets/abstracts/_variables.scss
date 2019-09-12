@@ -4,7 +4,9 @@
   --color-primary-light: #333333;
   --color-primary-dark: #666666;
   
-  --color-secondary: #e8b923;
+  --color-secondary: #f4c51a;
+  --color-secondary-light: #cfa21d; //#caa848;
+  --color-secondary-dark: #7c5802;
   
   --color-white: #ffffff;
   --color-black: #000000;
@@ -28,4 +30,6 @@
 
   --line: 3px solid rgba(220,220,220,.4);
   --line-2: 1rem solid rgba(236,100,51,1);
+  --line-3: 0.1em solid var(--color-secondary);
+  --line-4: 0.5em solid var(--color-secondary-light);
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
-import { createHistory } from 'history/createBrowserHistory'
+import {createBrowserHistory} from 'history'
 import Root from '../components/root/Root'
+
+const {createHistory} = createBrowserHistory
 
 export const history = createHistory
 
