@@ -8,9 +8,9 @@ export default function Footer() {
       <footer>
         <div className='footer-primary'>
           <Social />
-          <div className='footer-text'>
+          {/* <div className='footer-text'>
             <a href='https://goo.gl/maps/mxM7JLUarxYFnwCB9' target='_blank' rel="noopener noreferrer">Jr. Enrique Palacios 312, Huaraz</a>
-          </div>
+          </div> */}
           <div className="footer-primary--copyright">
             Hostel Traveller's Palace © 2019
           </div>
