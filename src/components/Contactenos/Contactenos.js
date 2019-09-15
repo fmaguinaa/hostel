@@ -11,8 +11,22 @@ import { Divider } from 'antd'
 // const Iframe = (
 //   <div dangerouslySetInnerHTML={{__html: {iframe}}}></div>
 // )
-
+// width = "600" height = "450" frameborder = "0" style = "border:0;" allowfullscreen = "" title = 'Ubicacion'
 export default class Contactenos extends Component {
+
+  componentDidMount(){
+    // const iframe = document.createElement('iframe')
+    // iframe.src = `https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d983.6905404222398!2d-77.5246574!3d-9.5293812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90df246e21607%3A0x29ed1c3bb9169a82!2sHostel%20Traveller&#39;s%20Palace!5e0!3m2!1ses-419!2spe!4v1568588133386!5m2!1ses-419!2spe`
+    // iframe.width = 600
+    // iframe.height = 450
+    // iframe.frameBorder = 0
+    // iframe.style='border: 0'
+    // iframe.allowFullscreen = true
+    // iframe.title = 'Ubicanos'
+    // let containerMap = document.getElementById('container-map')
+    // containerMap.appendChild(iframe)
+  }
+
   render() {
     return (
       <div className='contactenos'>
@@ -72,12 +86,7 @@ export default class Contactenos extends Component {
             </a>
           </div>
         </div>
-        <div>
-
-        <div>
-          {/* <Iframe/> */}
-        </div>
-        </div>
+        {/* <div id='container-map' style={{margin: '2rem'}}></div> */}
       </div>
     )
   }

@@ -26,11 +26,11 @@ export default class NavBar extends Component {
     };
 
     Item = (path, content) => (
-        <li>
-            <Link to={path} onClick={this.onClose}>
-                {content}
-            </Link>
-        </li>
+        <Link to={path} onClick={this.onClose}>
+            <li>
+                    {content}
+            </li>
+        </Link>
     )
 
     render() {
