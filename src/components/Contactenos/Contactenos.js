@@ -71,7 +71,7 @@ export default class Contactenos extends Component {
             <p className='text'>
               Whatsapp:
             </p>
-            <a href="https://wa.me/15551234567?text=Estoy%20interesado%20en%20hospedarme" target='_blank' rel="noopener noreferrer">
+            <a href="https://wa.me/51954896912?text=Estoy%20interesado%20en%20hospedarme" target='_blank' rel="noopener noreferrer">
               +51 954 896 912
             </a>
           </div>
